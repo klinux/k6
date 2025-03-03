@@ -19,7 +19,7 @@ export default function(){
 
 	check(result, {
 		"Status is 200": (r) => r.status == 200,
-		"Duration < 100ms": (r) => r.timings.duration < 500
+		"Duration < 20ms": (r) => r.timings.duration < 500
 	});
 
 	sleep(1);
